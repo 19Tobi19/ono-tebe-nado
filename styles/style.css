@@ -1,1 +1,364 @@
-/* место для вашего кода */
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  margin: 92px 24px 92px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu_list {
+  display: flex;
+  list-style: circle;
+  gap: 29px;
+  padding-left: 26px;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1;
+  color: black;
+}
+
+.header_menu_item {
+  padding-left: 3px;
+}
+.header_menu_item.active {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+.header_logo {
+  display: block;
+  width: 138px;
+}
+.header_logo_img {
+  width: 100%;
+}
+
+.header_contacts {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 237px;
+  color: black;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  margin-right: 29px;
+  margin-left: 151px;
+}
+.header_contacts_address {
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+/* COVER*/
+
+.cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 757px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.cover::before {
+  content: "";
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.cover_title {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 100px;
+  padding: 172px 50px 135px;
+}
+.title_span {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 30px;
+  padding-bottom: 20px;
+  display: block;
+  letter-spacing: 30px;
+}
+.letter_spacing_extended {
+  letter-spacing: 60px;
+}
+.no_letter_spacing {
+  letter-spacing: 0;
+}
+
+.title_span.start {
+  text-align: start;
+  padding-bottom: 27px;
+}
+
+.title_span.center {
+  text-align: center;
+}
+.title_span.end {
+  text-align: end;
+  padding-bottom: 0;
+}
+
+.cover_description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px 0 78px;
+}
+
+.cover_description_text {
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.cover_button {
+  background-color: transparent;
+  outline: none;
+  color: white;
+  line-height: 25.83px;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  cursor: pointer;
+}
+
+.lots {
+  margin: 179px 0 148px;
+}
+.lots_title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 27px 64px;
+}
+.card_list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  margin: 0 24px 30px;
+
+  gap: 25px;
+}
+
+.card_list_item {
+  flex: 1;
+  width: 334px;
+  min-height: 563px;
+}
+.card_link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.card_article {
+  width: 100%;
+  height: 100%;
+  line-height: 120%;
+  color: white;
+  padding: 51px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+.card_article::before {
+  content: "";
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.card_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  position: relative;
+}
+
+.card_text {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+  position: relative;
+}
+.card_text_letter_spacing {
+  letter-spacing: 2.6px;
+}
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.lots_look_more {
+  text-transform: lowercase;
+  font-size: 20px;
+  margin-left: 64px;
+  color: black;
+  margin-bottom: 148px;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 35px 0 0 70px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 180px;
+}
+.about_column:last-child {
+  margin-left: 72px;
+}
+.about_logo {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.about_logo_img {
+  width: 148px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.about_title {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 100px 0px;
+}
+.about_text {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+}
+.about_text:last-child {
+  letter-spacing: 0;
+  margin-top: 24px;
+}
+
+.letter_spacing_2 {
+  letter-spacing: 0.4px;
+}
+.letter_spacing_-1 {
+  letter-spacing: -0.2px;
+}
+.letter_spacing_3 {
+  letter-spacing: 0.6px;
+}
+.letter_spacing_1 {
+  letter-spacing: 0.2px;
+}
+.letter_spacing_4 {
+  letter-spacing: 0.8px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  margin: 0 50px 88px;
+}
+
+.footer_address {
+  margin: 0;
+}
+
+.footer_menu_list.footer {
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  gap: 4px;
+  margin-left: 2px;
+  padding: 0;
+  text-align: center;
+}
+
+.footer_menu_list {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1;
+  color: black;
+}
+
+.footer_menu_item.active {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+.footer_social_list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.social_link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.social_icon {
+  width: 48px;
+  height: 48px;
+}
