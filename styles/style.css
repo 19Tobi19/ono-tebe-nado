@@ -101,7 +101,6 @@ body {
   letter-spacing: 30px;
   padding-bottom: 20px;
   display: block;
-  letter-spacing: 30px;
 }
 .letter_spacing_extended {
   letter-spacing: 60px;
@@ -313,7 +312,6 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 88px;
   margin: 0 50px 88px;
 }
 
